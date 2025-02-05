@@ -6,13 +6,13 @@ import express from "express";
 
 const app = express();
 
-const {PORT} = process.env;
+const { PORT } = process.env;
 
 // algo
 app.get("/", function (req, res) {
-    res.send("Hello World");
+  res.send("Hello World");
 });
 
 app.listen(PORT, () => {
-    console.log(`http://127.0.0.1:${PORT}`);
-})
+  console.log(`http://127.0.0.1:${PORT}`);
+});
